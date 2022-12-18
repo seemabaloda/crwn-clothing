@@ -59,7 +59,7 @@ const handleSubmit = async (event) =>{
           <FormInput label="Password" type="password" onChange={handleChange} name="password" required/>
          
           <FormInput label="Confirm Password" type="password" onChange={handleChange} name="confirmPassword" required/>  
-          <Button buttonType='google' type="submit">Sign Up</Button>  
+          <Button type="submit">Sign Up</Button>  
         </form>
      </div>
     );
