@@ -1,0 +1,13 @@
+import { only } from "node:test";
+
+const source = useMemo(() => ({ uri: props.url }), [props.url]);
+ const {isOffline} = useNetwork();
+above there are two line and below you give this statement
+We can replace this line with useNetwork({onReconnect: () => setLoadState(LoadState.LOADING)});
+
+please explain it which we need to change because if we change only 
+
+const {isOffline} = useNetwork();
+this line then it is okay but i don't get the point to replace this line
+
+const source = useMemo(() => ({ uri: props.url }), [props.url]);
